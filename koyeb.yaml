@@ -1,0 +1,11 @@
+name: kidude-firewall
+services:
+  - name: firewall-api
+    git:
+      branch: main
+      repo: https://github.com/SamSpeedX/kidude
+    dockerfile: Dockerfile
+    ports:
+      - internal: 5000
+        external: true
+        protocol: http
