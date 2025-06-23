@@ -1,6 +1,7 @@
 import time, subprocess
 
-LOG_FILE = "/var/log/nginx/access.log"
+# LOG_FILE = "/var/log/nginx/access.log"
+LOG_FILE = "/logs/laravel.log"
 BAD_AGENTS = ["python-requests", "curl", "scrapy", "wget", "bot", "spider"]
 
 def block_ip(ip):
